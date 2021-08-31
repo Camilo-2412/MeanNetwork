@@ -1,0 +1,36 @@
+<div class="bgComponent">
+    <div class="form">
+      <mat-card class="card">
+        <mat-card-title> Create Post </mat-card-title>
+        <mat-card-content>
+          <div class="container">
+            <mat-form-field>
+              <input
+                [(ngModel)]="registerData.text"
+                matInput
+                placeholder="Post"
+                required
+              />
+            </mat-form-field>
+            <mat-form-field>
+              <input
+                [(ngModel)]="registerData.hastag"
+                matInput
+                placeholder=" Hastag "
+                
+              />
+            </mat-form-field>
+            
+          </div>
+          <mat-card-actions>
+            <button (click) ="savePost()"
+            class= "button colorButton"
+            mat-raised-button
+            >
+              Create
+            </button>
+          </mat-card-actions>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
